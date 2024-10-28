@@ -1,0 +1,205 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #0b1f36; /* Azul-marinho */
+    color: #d4af37; /* Dourado */
+    line-height: 1.6;
+}
+
+header {
+    background-color: #0b1f36; /* Azul-marinho */
+    color: #d4af37; /* Dourado */
+    padding: 20px 0;
+    text-align: center;
+    border-bottom: 2px solid #d4af37;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 120px; /* Tamanho do logo */
+    height: auto;
+    margin-left: 40px; /* Adiciona margem à esquerda para mover o logo à direita */
+    margin-right: 20px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: #d4af37; /* Dourado */
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Banner grande que pega toda a largura */
+.hero-banner {
+    width: 100%;
+    margin: 20px 0;
+    height: 400px; /* Altura do banner definida */
+}
+
+.banner-img {
+    width: 100%;
+    height: 100%; /* A imagem ocupa toda a altura definida */
+    object-fit: cover; /* Corta a imagem para preencher o banner corretamente */
+    display: block;
+}
+
+/* Estilo da galeria de fotos */
+.gallery {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    margin: 0 auto;
+}
+
+.gallery-item {
+    width: 23%; /* Cada imagem ocupa cerca de 1/4 da largura da tela */
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 250px; /* Altura das imagens da galeria definida */
+    object-fit: cover; /* Corta a imagem para preencher o espaço da galeria */
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.gallery-item img:hover {
+    transform: scale(1.05); /* Efeito de zoom ao passar o mouse */
+}
+
+/* Estilo para a seção de imagem e texto ao lado */
+.image-text-section {
+    padding: 40px 20px;
+    display: flex;
+    justify-content: center;
+    background-color: #0b1f36;
+}
+
+.image-text-container {
+    display: flex;
+    max-width: 1200px;
+    width: 100%;
+    align-items: center;
+    gap: 30px;
+}
+
+.image-side {
+    flex: 1;
+}
+
+.image-side img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.text-side {
+    flex: 1;
+    color: #d4af37;
+}
+
+.text-side h2 {
+    margin-bottom: 10px;
+    font-size: 28px;
+    color: #d4af37;
+}
+
+.text-side p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+footer {
+    background-color: #0b1f36; /* Azul-marinho */
+    color: #d4af37; /* Dourado */
+    text-align: center;
+    padding: 20px;
+    border-top: 2px solid #d4af37;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    margin: 0;
+    font-size: 14px;
+}
+
+/* Estilos globais para padronizar margens e espaçamento interno */
+.section {
+    margin: 20px;     /* Margem ao redor das seções */
+    padding: 20px;    /* Espaçamento interno das seções */
+    line-height: 1.8; /* Altura da linha para melhorar a legibilidade */
+}
+
+.section p {
+    margin-bottom: 20px; /* Espaçamento entre os parágrafos */
+}
+/* Estilo adicional para o formulário */
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px; /* Limitar largura máxima */
+    margin: 0 auto;   /* Centralizar o formulário */
+}
+
+label {
+    margin-top: 15px;
+    font-size: 18px;
+    color: #fff9f9;
+}
+
+input[type="text"], input[type="email"], textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 8px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+textarea {
+    height: 150px;  /* Altura maior para o campo de mensagem */
+    resize: vertical; /* Permitir redimensionamento vertical */
+}
+
+button {
+    margin-top: 20px;
+    padding: 12px;
+    font-size: 18px;
+    background-color: #f4c542;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #d4a12c;
+}
+
